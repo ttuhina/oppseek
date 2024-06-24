@@ -1,5 +1,14 @@
 OPPSEEK is a web-based platform designed to bridge the gap between developers and those in need of development services. Whether you're a small business looking for someone to build and manage your website, or a company seeking interns, Developer Connect provides a seamless interface to connect with the right talent.
 
+![Job listinsg page](https://github.com/ttuhina/oppseek/blob/main/Screenshots/Screenshot%202024-06-24%20115338.png )
+
+![Home page](https://github.com/ttuhina/oppseek/blob/main/Screenshots/Screenshot%202024-06-24%20115413.png )
+
+![Sign up page](https://github.com/ttuhina/oppseek/blob/main/Screenshots/Screenshot%202024-06-24%20115356.png)
+
+
+
+
 1. Key Features -
 
 User Registration and Profiles: Developers, small business owners, and companies can create detailed profiles. Developers can showcase their skills and portfolio, while businesses can post their needs and project details.
@@ -28,3 +37,6 @@ JavaScript: Provides interactive elements and enhances the user experience.
 Database-
 
 MySQL: The relational database management system used to store user data, job listings, applications, and other crucial information.
+
+
+
