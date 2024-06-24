@@ -1,0 +1,141 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("webteck\ bg.jpg"); ]
+    background-size: cover; ]
+    background-position: center; 
+    
+    
+}
+
+.NavigationContainer[_ngcontent-sc150] {
+    align-items: center;
+    display: flex;
+    height: 80px;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {    
+    background-color: white;
+    
+}
+
+.logo {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: left;
+    color: #121224;
+    color: var(--N800, #121224);
+    color: #717b9e;
+    color: var(--N600, #717b9e);
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-family: Satoshi;
+    font-family: var(--font-family, "Satoshi");
+    font-size: 15px;
+    line-height: 20px;
+    max-width: 150px;
+    position: relative;
+    text-decoration: none;
+    top: 0;
+    
+}
+
+
+
+nav {
+    width: 100%;
+    clear: both;
+}
+
+nav ul {
+    float: center right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    text-decoration: none;
+    color: #000;
+}
+
+main {
+    padding-top: 40px;
+}
+
+.hero {
+    text-align: center;
+    color: #f1f1f1;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.company-logos {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.company-logos li {
+    margin-right: 20px;
+}
+
+.company-logos img {
+    width: 40px;
+    height: 40px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.translucent-box {
+    background-color: rgba(255, 255, 255, 0.8); 
+    
+    border: 2px solid #fffbfb; 
+    
+    padding: 20px; 
+    width: 600px; 
+    margin: 0 auto; 
+  }
+  
+ 
+  .translucent-box h1 {
+    color: black;
+  }
+  
+  .translucent-box p {
+    color: black;
+  }
+  

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opportunity Site</title>
+    <style>
+        body, .content-container {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('webteck bg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            color: black; 
+            padding: 10px 20px;
+        }
+
+        .navbar-logo {
+            width: 100px; 
+        }
+
+        .navbar-links {
+            display: flex;
+        }
+
+        .navbar-link {
+            margin-left: 20px; 
+            text-decoration: none;
+            color: black; 
+        }
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .search-bar {
+            width: 300px; 
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .options-container {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+
+        .sort-select,
+        .filter-select {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .service-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: rgb(233, 246, 226);
+            width: 80%;
+            max-width: 600px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .service-card button {
+            padding: 8px 16px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .popup-form {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+
+        .popup-form input {
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .popup-form button {
+            padding: 8px 16px;
+            background-color: #bceb7e;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <img src="webtech_logo.png" alt="Logo" class="navbar-logo">
+        <div class="navbar-links">
+            <a href="/sign-in.html" class="navbar-link">Sign In</a>
+            <a href="/sign-up.html" class="navbar-link">Sign Up</a>
+        </div>
+        <button onclick="openPopup()">Post a Job</button>
+    </div>
+
+
+    <div class="search-container">
+        <input type="text" placeholder="Search..." class="search-bar">
+        <div class="options-container">
+            <select class="sort-select">
+                <option value="latest">Sort by Latest</option>
+                <option value="Salary">Sort by Highest Salary</option>
+    
+            </select>
+            <select class="filter-select">
+                <option value="all">All</option>
+                <option value="featured">Featured</option>
+                <!-- Add more filter options if needed -->
+            </select>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <div>
+            <h3>Job Name</h3>
+            <p>Posted by: Company Name</p>
+            <p>Date Posted: January 1, 2024</p>
+            <p>Number : 7569102570</p>
+        </div>
+        <a href="apply.html"><button>Apply</button></a>
+    </div>
+
+ 
+    <div class="popup-form" id="popupForm">
+        <h2>Post a Job</h2>
+        <form id="jobForm" method="post" action="job.php">
+            <input type="text" placeholder="Job Name" name="job_name">
+            <input type="text" placeholder="Posted by" name="posted_by">
+            <input type="date" placeholder="Date Posted" name="date_posted">
+            <input type="tel" placeholder="Phone Number" name="phone_number">
+            <input type="tel" placeholder="Salary" name="Salary">
+            <div class="button-container">
+                <button type="button" onclick="cancelForm()">Cancel</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+   
+    </div>
+
+    <script>
+        function openPopup() {
+            var popupForm = document.getElementById("popupForm");
+            popupForm.style.display = "block";
+        }
+
+  
+        function cancelForm() {
+            var popupForm = document.getElementById("popupForm");
+            popupForm.style.display = "none";
+        }
+
+        function submitForm() {
+            var jobName = document.querySelector(".popup-form input:nth-of-type(1)").value;
+            var postedBy = document.querySelector(".popup-form input:nth-of-type(2)").value;
+            var datePosted = document.querySelector(".popup-form input:nth-of-type(3)").value;
+            var number = document.querySelector(".popup-form input[type='tel']").value; 
+            var serviceCard = document.createElement("div");
+            serviceCard.classList.add("service-card");
+            serviceCard.innerHTML = `
+                <div>
+                    <h3>${jobName}</h3>
+                    <p>Posted by: ${postedBy}</p>
+                    <p>Date Posted: ${datePosted}</p>
+                    <p>Number: ${number}</p>
+                </div>
+                <button>Apply</button>
+            `;
+
+            document.body.appendChild(serviceCard);
+
+     
+            document.getElementById("popupForm").reset(); 
+            document.getElementById("popupForm").style.display = "none";
+        }
+    </script>
+</body>
+</html>

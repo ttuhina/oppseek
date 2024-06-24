@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styleproject.css">
+</head>
+<body>
+    <!-- Background with blur -->
+    <div class="bg"></div>
+
+    <!-- Signup form -->
+    <form class="signup-box" method="POST" action="sign.php" onsubmit="return validateForm()" style="font-weight:bold;">
+        <p style="color:rgb(35, 35, 193); font-size: larger;"><b>Sign up</b></p>
+        <!-- Full Name field -->
+        <label for="name">Full Name</label><br>
+        <input type="text" name="name" id="name" placeholder="Name">
+        <br><br>
+        <!-- Email field -->
+        <label for="email">E-Mail</label><br>
+        <input type="email" name="email" id="email" placeholder="E-mail">
+        <br><br>
+        <!-- Password field -->
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password" placeholder="*****">
+        <br><br>
+        <!-- Confirm Password field -->
+        <label for="confirmpassword">Confirm Password</label><br>
+        <input type="password" name="confirmpassword" id="confirmpassword" placeholder="*****">
+        <br><br>
+        <!-- Role dropdown menu -->
+        <label for="role">Choose a role:</label><br><br>
+        <select id="role" name="role">
+            <option value="Hiring">Hiring</option>
+            <option value="Open to work">Open to work</option>
+        </select>
+        <br><br>
+        <!-- Sign-up button -->
+        <button type="submit" class="button-style" id="signup-btn">Sign Up</button>
+        <br><br>
+        <!-- Sign-in link -->
+        <p>Not a member? <a href="sign-in.html">Sign in.</a></p>
+    </form>
+</body>
+</html>

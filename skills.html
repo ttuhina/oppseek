@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Skills Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #f6f6f6;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            padding: 12px 20px;
+            background-color: #ed225d;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #d1114a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Technical Skills Form</h2>
+        <form action="#" method="post">
+            <label for="softSkills">Soft Skills</label>
+            <input type="text" id="softSkills" name="softSkills" required>
+
+            <label for="programmingLanguages">Programming Languages Known</label>
+            <input type="text" id="programmingLanguages" name="programmingLanguages" required>
+
+            <label for="projects">Projects Made</label>
+            <textarea id="projects" name="projects" rows="4" required></textarea>
+
+            <label for="researchPapers">Research Papers</label>
+            <textarea id="researchPapers" name="researchPapers" rows="4" required></textarea>
+
+            <label for="additionalSkill1">Additional Skill 1</label>
+            <input type="text" id="additionalSkill1" name="additionalSkill1" required>
+
+            <label for="additionalSkill2">Additional Skill 2</label>
+            <input type="text" id="additionalSkill2" name="additionalSkill2" required>
+
+            <label for="additionalSkill3">Additional Skill 3</label>
+            <input type="text" id="additionalSkill3" name="additionalSkill3" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

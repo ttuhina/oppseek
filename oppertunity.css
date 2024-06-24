@@ -1,0 +1,109 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+.logo {
+    display: flex; 
+    align-items: center;
+}
+
+.logo img {
+    height: 80px;
+    width: 150px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    align-items: right;
+}
+
+nav ul li {
+    display: inline;
+    align-items: right;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Search bar styles */
+.search-bar {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hero section styles */
+.hero {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+}
+
+/* Services section styles */
+.services {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.service-card {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.service-card img {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* About Us section styles */
+.about-us {
+    background-color: #ccc;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}

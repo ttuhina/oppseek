@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up</title>
+<link rel="stylesheet" href="styleproject.css">
+
+<script>
+    function validateForm() {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+    
+        // Check if email is empty
+        if (email == "") {
+            alert("Email must be filled out");
+            return false;
+        }
+    
+        // Check if password is empty
+        if (password == "") {
+            alert("Password must be filled out");
+            return false;
+        }
+    
+ 
+    }
+    </script>
+
+</head>
+<body>
+<!-- Background with blur -->
+<div class="bg"></div>
+
+<!-- Signup form -->
+<form class="signup-box" method="POST" action="signin.php "  onsubmit="return validateForm()" style="font-weight:bold; ">
+    <p style="color:rgb(35, 35, 193); font-size:larger;"><b>Sign in</b></p>
+   
+    <!-- Email field -->
+    <label for="email">E-Mail</label><br>
+    <input type="email" name="email" id="email" placeholder="E-mail">
+    <br><br>
+    <!-- Password field -->
+    <label for="password">Password</label><br>
+    <input type="password" name="password" id="password" placeholder="***">
+    <br><br>
+    <!-- Sign-up button -->
+    <button type="submit" class="button-style">Sign In</button>
+    <br><br>
+    <!-- Sign-in link -->
+    <p>Not a member? <a href="sign-up.html" >Sign up.</a></p>
+</form>
+</body>
+</html>
